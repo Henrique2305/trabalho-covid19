@@ -112,34 +112,3 @@ int maior_sequencia_crescente(int d, int contagios[][d], int p) {
     }
     return maior;
 }
-
-/* o código abaixo está errado
-
- Função que devolve a maior sequência crescente de dias do número de casos de covid19
-   de um país. 
-
-int maior_sequencia_crescente(int numDias, int matNumContagios[][numDias], int indice) {
-    int i, sequenciaDias = 1;
-    int maior = 0;
-    
-    // Verifica qual é o maior número de casos de um país.
-    for(int atual = 0; atual < numDias; atual++) {
-        if(matNumContagios[indice][atual] > matNumContagios[indice][maior]) {
-            maior = atual;
-        }
-    }
-
-    // Verifica a maior sequência de dias do número de covi19 de um país.
-    for ( i = maior; i < numDias; i-- ) {
-        if(matNumContagios[indice][i-1] < matNumContagios[indice][i]) {
-            sequenciaDias += 1;
-        } else if(matNumContagios[indice][i] > matNumContagios[indice][i+1]) {
-            return sequenciaDias = 1;
-        } else if(matNumContagios[indice][i-1] > matNumContagios[indice][i]) {
-            return sequenciaDias;
-        }
-    }
-    return 0;
-}
-
-*/
